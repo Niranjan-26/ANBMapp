@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/basic9"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="30dp"
+        android:gravity="center"
+        tools:context=".LoginAsBand_form">
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="5dp"
+
+            >
+
+            <EditText
+                android:id="@+id/bandnamemember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="22sp"
+                android:hint="Band Name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="5dp"
+            app:passwordToggleEnabled="true"
+
+            >
+
+            <EditText
+                android:id="@+id/bandcodemember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textSize="22sp"
+                android:hint="Band Code" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:layout_marginTop="20dp"
+            android:textColor="@color/error"
+            android:id="@+id/chkboxloginbmembers"
+            android:layout_width="match_parent"
+            android:text="Remember me"
+            android:fontFamily="@font/work_sans"
+            android:textSize="17sp"
+            android:checked="false"
+            android:layout_height="wrap_content"></CheckBox>
+
+
+        <Button
+            android:id="@+id/btnmemberlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:gravity="center"
+            android:fontFamily="@font/work_sans"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:background="@drawable/button_rounded"
+            android:layout_marginTop="35dp">
+
+        </Button>
+
+<!--        <TextView-->
+<!--            android:id="@+id/forgotpwbandmembers"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:text="Forgot Password?"-->
+<!--            android:textColor="@color/colorBackground2"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="italic"/>-->
+
+
+    </LinearLayout>
+</LinearLayout>

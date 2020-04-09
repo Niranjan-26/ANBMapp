@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linrnotification1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <include layout="@layout/notificationtitlebar"></include>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linrnotification2"
+        android:orientation="vertical"
+        android:layout_below="@+id/linrnotification1"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="718dp">
+
+        <TextView
+            android:id="@+id/txtviewnonotification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="No Notifications"
+            android:textSize="20dp">
+
+        </TextView>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

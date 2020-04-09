@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/swiperefreshprofileuser"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/topframe2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <include
+                layout="@layout/header"
+                android:padding="10dp">
+
+            </include>
+            <TextView
+                android:id="@+id/txtviewurlinprofilefrag"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:text="url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/topframe3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/topframe2"
+            android:background="#B8B6B6">
+            <TextView
+                android:id="@+id/FullNametx"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/work_sans"
+                android:textColor="@color/white"
+                android:text="FullName">
+
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/useredit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:src="@drawable/editicon">
+
+            </ImageView>
+
+
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/layoutuserprofile"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_below="@+id/topframe3"
+            android:background="@color/white"
+            android:orientation="vertical"
+           android:paddingLeft="15dp"
+            tools:context=".Signup_form">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="3"
+                android:columnOrderPreserved="false"
+                android:rowCount="3">
+
+                <ImageView
+                    android:id="@+id/i1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_location_on_black_24dp"></ImageView>
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="From"
+                    android:textColor="#898989"
+
+                    android:textSize="15dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv2add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="Address"
+                    android:textColor="@color/basic2"
+                    android:textSize="15dp"></TextView>
+
+                <ImageView
+                    android:id="@+id/i2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_local_phone_black_24dp"></ImageView>
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="Phone"
+                    android:textColor="#898989"
+                    android:textSize="15dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv4phn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="Phone No"
+                    android:textColor="@color/basic2"
+                    android:textSize="15dp"></TextView>
+
+                <ImageView
+                    android:id="@+id/i3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_email_black_24dp"></ImageView>
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="Email"
+                    android:textColor="#898989"
+                    android:textSize="15dp"></TextView>
+
+                <TextView
+                    android:id="@+id/fragment_profile_Email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="Email"
+                    android:textColor="@color/basic2"
+                    android:textSize="15dp"></TextView>
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/i4"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:src="@drawable/ic_location_on_black_24dp"></ImageView>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv7"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:fontFamily="sans-serif"-->
+<!--                    android:text="from"-->
+<!--                    android:textColor="#898989"-->
+<!--                    android:textSize="20dp"></TextView>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv8"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:fontFamily="sans-serif-medium"-->
+<!--                    android:text="from"-->
+<!--                    android:textColor="@color/colorPrimaryDark"-->
+<!--                    android:textSize="20dp"></TextView>-->
+
+            </GridLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ANBM</string>
+    <!--    <string name="Profile_Fragment_Title">Profile</string>-->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="create_your_own_band">Create Your Own Band</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+
+    <item name="item_click_support" type="id" />
+</resources>

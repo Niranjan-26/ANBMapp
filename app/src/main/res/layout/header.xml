@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:background="@color/basic1"
+    android:padding="20dp">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civuserpf"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/profile"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorPrimary">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/fragment_profile_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/civuserpf"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="22sp"
+        android:text="Username"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        ></TextView>
+
+
+
+    <TextView
+        android:id="@+id/useridinprofile"
+        android:text="userid"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+
+
+
+</LinearLayout>

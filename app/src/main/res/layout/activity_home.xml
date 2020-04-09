@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/basic3"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <HorizontalScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:fillViewport="true">-->
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<!--        <LinearLayout-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:paddingTop="10dp"-->
+<!--            android:paddingBottom="10dp"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <androidx.cardview.widget.CardView-->
+<!--                app:cardCornerRadius="6dp"-->
+<!--                android:layout_margin="16dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--            <androidx.viewpager.widget.ViewPager-->
+<!--                android:id="@+id/viewPager1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:background="@color/red"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="280dp"-->
+<!--                android:scrollIndicators="bottom"-->
+<!--                >-->
+
+<!--            </androidx.viewpager.widget.ViewPager>-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                android:padding="80dp"
+                android:background="@color/basic3"
+                android:src="@drawable/anmb_logo_color" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linn1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|top"
+            android:background="@color/basic7"
+            android:padding="30dp"
+            tools:context=".Home">
+
+<!--            <TextView-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:gravity="center"-->
+<!--                android:textSize="25sp"-->
+<!--                android:fontFamily="@font/work_sans"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:text="Welcome"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--            </TextView>-->
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textSize="19sp"
+                android:fontFamily="@font/work_sans"
+                android:textColor="@color/colorPrimary"
+                android:text="Please Choose Your Profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_rounded"
+                android:text="Band Manager"
+                android:textColor="@color/basic3"
+                android:textStyle="bold"
+                android:fontFamily="@font/work_sans"
+                android:onClick="btn_login_as_band_form"
+                android:textSize="20sp">
+
+            </Button>
+            <Button
+                android:id="@+id/btnbandmember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:background="@drawable/button_rounded"
+                android:onClick="btn_login_band_member"
+                android:text="BAND MEMBER"
+                android:textColor="@color/basic3"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btnloginasguest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/work_sans"
+                android:background="@drawable/button_rounded"
+                android:onClick="btn_login_as_guest_form"
+                android:text="Guest"
+                android:textColor="@color/basic3"
+                android:textSize="20sp">
+
+            </Button>
+
+
+
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="Wanna Support Us ?"
+                android:textStyle="italic"
+                android:fontFamily="@font/work_sans"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+<!--    </HorizontalScrollView>-->
+</ScrollView>

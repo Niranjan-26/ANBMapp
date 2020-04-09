@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/basic9"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="30dp"
+        android:layout_gravity="center"
+        tools:context=".LoginAsGuest_form">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="5dp"
+
+            >
+
+            <EditText
+                android:id="@+id/etxtuserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="text"
+                android:textSize="22sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="5dp"
+            app:passwordToggleEnabled="true"
+
+            >
+
+            <EditText
+                android:id="@+id/etxtpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="22sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/chkboxloginUser"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/error"
+            android:layout_width="match_parent"
+            android:text="Remember me"
+            android:fontFamily="@font/work_sans"
+            android:textSize="17sp"
+            android:checked="false"
+            android:layout_height="wrap_content"></CheckBox>
+
+        <Button
+            android:id="@+id/btnloginUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/work_sans"
+            android:textStyle="bold"
+            android:background="@drawable/button_rounded"
+            android:text="Login"
+            android:textColor="#ffff"
+            android:textSize="20sp">
+
+        </Button>
+        <TextView
+            android:id="@+id/forgotpwuser"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Forgot Password ?"
+            android:onClick="gotoforgotuserpwactivity"
+            android:fontFamily="@font/work_sans"
+            android:textColor="@color/error"
+            android:textSize="17sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:onClick="tv_User_Register"
+            android:fontFamily="@font/work_sans"
+            android:text="Not Signed Yet? Click Here."
+            android:textColor="@color/basic1"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

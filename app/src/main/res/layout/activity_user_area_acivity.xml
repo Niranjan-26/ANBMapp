@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/topframe2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <include
+            layout="@layout/header2"
+            android:padding="10dp">
+
+        </include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topframe2"
+            android:orientation="horizontal"
+            android:background="#B8B6B6">
+
+
+
+
+            <TextView
+                android:id="@+id/bands_name"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/work_sans"
+                android:textColor="@color/white"
+                android:text="Band Name">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/usridinuserareaforband"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:visibility="gone"
+                android:text="userid"></TextView>
+
+            <TextView
+                android:id="@+id/favstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:visibility="gone"
+                android:text="favstatus"></TextView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                >
+
+                <CheckBox
+                    android:id="@+id/Favourtiesbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:gravity="center"
+
+                    android:layout_marginRight="30dp"
+                    android:button="@drawable/fav_unchecked"
+                    android:scaleType="fitCenter"
+
+                    >
+
+                </CheckBox>
+
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/useridineditpf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/colorPrimary"
+                android:text="user id">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llayoutsignupform"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_below="@+id/topframe2"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:orientation="vertical"
+
+            tools:context=".Signup_form">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="3"
+                android:layout_marginLeft="10dp"
+                android:columnOrderPreserved="false"
+                android:rowCount="3">
+
+                <ImageView
+                    android:id="@+id/i4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_library_music_black_24dp"></ImageView>
+
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="Genre"
+                    android:textColor="#898989"
+
+                    android:textSize="15dp"></TextView>
+
+                <TextView
+                    android:id="@+id/bands_genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="Genre"
+                    android:textColor="@color/basic2"
+                    android:textSize="15dp"></TextView>
+
+                <ImageView
+                    android:id="@+id/i1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_location_on_black_24dp"></ImageView>
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="From"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#898989"
+
+                    android:textSize="15dp"></TextView>
+
+                <TextView
+                    android:id="@+id/bands_based_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="Address"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/basic2"
+                    android:textSize="15dp"></TextView>
+
+                <ImageView
+                    android:id="@+id/i2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_local_phone_black_24dp"></ImageView>
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="Phone"
+                    android:textColor="#898989"
+                    android:textSize="15dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv4phn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="Phone No"
+                    android:textColor="@color/basic2"
+                    android:textSize="15dp"></TextView>
+
+                <ImageView
+                    android:id="@+id/i3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_email_black_24dp"></ImageView>
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="Email"
+                    android:textColor="#898989"
+                    android:textSize="15dp"></TextView>
+
+                <TextView
+                    android:id="@+id/bands_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="Email"
+                    android:textColor="@color/basic2"
+                    android:textSize="15dp"></TextView>
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/i4"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:src="@drawable/ic_location_on_black_24dp"></ImageView>-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/tv7"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginLeft="10dp"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:fontFamily="sans-serif"-->
+                <!--                    android:text="from"-->
+                <!--                    android:textColor="#898989"-->
+                <!--                    android:textSize="20dp"></TextView>-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/tv8"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginLeft="10dp"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:fontFamily="sans-serif-medium"-->
+                <!--                    android:text="from"-->
+                <!--                    android:textColor="@color/colorPrimaryDark"-->
+                <!--                    android:textSize="20dp"></TextView>-->
+
+            </GridLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/bands_new_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="badn id"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:visibility="gone"></TextView>
+
+            <TextView
+                android:id="@+id/bands_new_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="band url"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:visibility="gone"></TextView>
+
+
+
+            <TextView
+                android:id="@+id/is_Fav_fetched_From_server"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bands_genre"
+                android:layout_marginTop="10dp"
+                android:text="isfav?"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:id="@+id/is_Fav_band1_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bands_genre"
+                android:layout_marginTop="10dp"
+                android:text="isfav?bandid"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

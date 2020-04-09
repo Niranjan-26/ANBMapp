@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="65dp"
+
+    android:background="@drawable/customeswipelistview">
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/linearlayoutonclick"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="20dp"-->
+<!--        android:orientation="vertical">-->
+<!--        <TextView-->
+<!--            android:id="@+id/tvBandNameshowfav"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="Band Name"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/basic1"-->
+<!--            android:fontFamily="@font/work_sans"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"-->
+<!--            />-->
+
+    <RelativeLayout
+        android:id="@+id/linearlayoutonclick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tvBandNameshowfav"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="17dp"
+                android:fontFamily="@font/work_sans"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Band Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@color/basic1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/tvswipefavbands"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:padding="20dp"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+        <TextView
+            android:id="@+id/tvbandidshowfav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left"
+
+            android:text="Band Id"
+            android:visibility="gone"
+            android:textColor="@color/colorPrimaryDark"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+            />
+        <TextView
+            android:id="@+id/tvbandphoneshowfav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left"
+
+            android:text="Band Id"
+            android:visibility="gone"
+            android:textColor="@color/colorPrimaryDark"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+            />
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

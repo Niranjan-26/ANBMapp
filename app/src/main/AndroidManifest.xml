@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.anbmapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ChangeUserPassword"></activity>
+        <activity android:name=".ForgotPwUserEnterVCode" />
+        <activity android:name=".FogotPasswordUser" />
+        <activity android:name=".BandMembersProfile" />
+        <activity android:name=".LoginBandMembers" />
+        <activity android:name=".BandProfileEditDash" />
+        <activity android:name=".BandManagerGallery" />
+        <activity android:name=".BandNoticeBoard" />
+        <activity android:name=".showFavbandlist" />
+        <activity android:name=".uploadingUserpfpic" />
+        <activity android:name=".EditUserProfile" /> <!-- <activity android:name=".Bands_Details_fetching" /> -->
+        <activity android:name=".uploadBandStatus" />
+        <activity android:name=".UploadBandProfilePic" />
+        <activity android:name=".DashBoardBandProfile" />
+        <activity android:name=".UpdatingBandProfilePic" />
+        <activity android:name=".UploadPics" />
+        <activity android:name=".uploadAndFetchingImages.uploadandfetching" />
+        <activity android:name=".Bands_Profile" /> <!-- <activity android:name=".Band_register"></activity> -->
+        <activity android:name=".home" />
+        <activity android:name=".UserAreaAcivity" />
+        <activity android:name=".UserProfileActivity" />
+        <activity android:name=".Band_code_generator" />
+        <activity android:name=".register_user" />
+        <activity android:name=".login_user" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Band_register" />
+        <activity android:name=".login_bandmember">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

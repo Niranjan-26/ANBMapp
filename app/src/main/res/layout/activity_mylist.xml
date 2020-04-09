@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+<!--        <TextView-->
+<!--            android:id="@+id/tvBandName"-->
+<!--            android:text="Band Name"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:textColor="@color/colorBackground2"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:textSize="25sp"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"-->
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvBandGenre"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:text="Band Genre"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textSize="18dp"-->
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvBandBasedCity"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:text="Band Based City"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textSize="18dp"-->
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvBandEmail"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:text="Band Email"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textSize="18dp"-->
+<!--            />-->
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/tvBandStatus"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="Band Status"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="18dp"&ndash;&gt;-->
+<!--&lt;!&ndash;           />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="300dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="250dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:src="@drawable/logout2"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/ivPicasso"></ImageView>&ndash;&gt;-->
+
+
+
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/tvBandEmail"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+
+<!--&lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="18dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textAppearance="@style/TextAppearance.AppCompat" />&ndash;&gt;-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnContactBand"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="5dp"-->
+
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:background="@drawable/button_rounded"-->
+<!--            android:text="Contact"-->
+<!--            android:textColor="#ffff"-->
+<!--            android:textSize="15sp"/>-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/checkboxFavourties"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:paddingLeft="20dp">-->
+
+<!--        </CheckBox>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvUserId"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="user id"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textColor="@color/colorAccent" />-->
+
+
+<!--    </LinearLayout>-->
+
+</LinearLayout>

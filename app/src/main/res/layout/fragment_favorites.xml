@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+   <LinearLayout
+       android:id="@+id/linearA"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+      <TextView
+          android:id="@+id/useridforfavdetails"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="user id"
+          android:visibility="gone"></TextView>
+
+          <include layout="@layout/favfragmentheader"></include>
+
+   </LinearLayout>
+   <LinearLayout
+       android:orientation="vertical"
+       android:padding="20dp"
+       android:layout_below="@id/linearA"
+       android:id="@+id/linearC"
+       android:layout_width="match_parent"
+       android:layout_height="115dp">
+      <GridLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:alignmentMode="alignMargins"
+          android:columnCount="7"
+
+          android:columnOrderPreserved="false"
+          android:rowCount="3">
+
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+
+          android:src="@drawable/favmusica">
+
+      </ImageView>
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+
+
+          android:src="@drawable/favmusicd">
+
+      </ImageView>
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+
+
+          android:src="@drawable/favmusicb">
+
+      </ImageView>
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+
+          android:src="@drawable/favmusicc">
+
+      </ImageView>
+         <ImageView
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+
+             android:src="@drawable/favmusica">
+
+         </ImageView>
+         <ImageView
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+
+
+             android:src="@drawable/favmusicd">
+
+         </ImageView>
+         <ImageView
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+
+             android:src="@drawable/favmusica">
+
+         </ImageView>
+
+      </GridLayout>
+
+   </LinearLayout>
+   <LinearLayout
+       android:id="@+id/linearB"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/linearC">
+<!--      <androidx.recyclerview.widget.RecyclerView-->
+<!--          android:id="@+id/recyclerviewFav"-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="match_parent"-->
+<!--          tools:layout_editor_absoluteX="8dp"-->
+<!--          tools:layout_editor_absoluteY="8dp">-->
+
+<!--      </androidx.recyclerview.widget.RecyclerView>-->
+
+      <com.baoyz.swipemenulistview.SwipeMenuListView
+
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/recyclerviewFav"
+          android:paddingLeft="10dp"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"
+          tools:layout_editor_absoluteX="8dp"
+          tools:layout_editor_absoluteY="8dp"
+          android:divider="@android:color/transparent"
+          android:dividerHeight="8dp"/>
+
+   </LinearLayout>
+
+
+</RelativeLayout>

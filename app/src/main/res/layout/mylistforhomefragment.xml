@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/customeswipelistview"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/linearlayoutonclick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tvBandNamerecyler"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="17dp"
+                android:fontFamily="@font/work_sans"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Band Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@color/basic1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/tvseemorebanddetails"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:padding="20dp"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+
+        <TextView
+            android:id="@+id/tvBandGenrerecyler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="Band Genre"
+            android:textSize="18dp"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/tvBandPhonerecyler"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="Phone"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvBandBasedCityrecyler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="Band Based City"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvBandEmailrecyler"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="Band Email"
+            android:textSize="18dp"
+            android:visibility="gone" />
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvBandStatus"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:text="Band Status"-->
+        <!--            android:layout_height="30dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:textSize="18dp"-->
+        <!--           />-->
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="300dp"-->
+        <!--            android:layout_height="250dp"-->
+        <!--            android:src="@drawable/logout2"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:id="@+id/ivPicasso"></ImageView>-->
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvBandEmail"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+
+        <!--            android:gravity="center"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:textSize="18dp"-->
+        <!--            android:textAppearance="@style/TextAppearance.AppCompat" />-->
+
+        <!--        <Button-->
+        <!--            android:id="@+id/btnContactBand"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:gravity="center"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_marginTop="5dp"-->
+
+        <!--            android:layout_marginBottom="5dp"-->
+        <!--            android:background="@drawable/button_rounded"-->
+        <!--            android:text="Contact"-->
+        <!--            android:textColor="#ffff"-->
+        <!--            android:textSize="15sp"/>-->
+
+
+        <TextView
+            android:id="@+id/tvBandIdrecyler"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="Band Id"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvBandfavstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="favstatus"
+            android:textSize="18dp"
+            android:visibility="gone" />
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvBandurlrecyler"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:fontFamily="sans-serif"-->
+        <!--            android:text="url"-->
+        <!--            android:layout_height="30dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:textSize="18dp"-->
+        <!--            />-->
+
+
+        <!--        <CheckBox-->
+        <!--            android:id="@+id/checkboxFavourties"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="63dp"-->
+        <!--            android:layout_gravity="right"-->
+        <!--            android:adjustViewBounds="true"-->
+        <!--            android:layout_marginBottom="5dp"-->
+        <!--            android:button="@drawable/favouritesbutton"-->
+        <!--            android:checked="false"-->
+        <!--            android:scaleType="center">-->
+
+        <!--        </CheckBox>-->
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvUserId"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="user id"-->
+        <!--            android:textSize="15sp"-->
+        <!--            android:textColor="@color/colorAccent" />-->
+
+
+    </RelativeLayout>
+
+</LinearLayout>

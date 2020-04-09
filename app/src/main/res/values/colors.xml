@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03080C</color>
+    <color name="colorPrimaryDark">#202F65</color>
+    <color name="colorAccent">#7A9E9F</color>
+    <color name="colorPrimaryDark2">#4F6367</color>
+    <color name="colorBackground">#EEF5DB </color>
+    <color name="colorBackground2">#FE5F55</color>
+    <color name="white">#FFFFFF </color>
+    <color name="LightBlue">#2962FF</color>
+    <color name="red">#FA0303</color>
+    <color name="gray">#B8B6B6</color>
+    <color name="gray2">#F4F4F4</color>
+
+    <color name="RaginBeige">#fff5d7</color>
+    <color name="CoralPink">#ff5e6c</color>
+    <color name="SleutheYellow">#feb300</color>
+    <color name="PinkLeaf">#ffaaab</color>
+    <color name="green">#AEDCC0</color>
+    <color name="BackgroundTan">#fceed1</color>
+
+
+    <color name="primary">#202F65</color>
+    <color name="primary2">#6200EE</color>
+    <color name="primaryVariant">#3700B3</color>
+    <color name="secondary">#03DAC6</color>
+    <color name="secondaryvariant">#018786</color>
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="error">#B00020</color>
+    <color name="onprimary">#FFFFFF</color>
+    <color name="onsecondary">#000000</color>
+    <color name="onbackground">#000000</color>
+    <color name="onsurface">#000000</color>
+    <color name="onerror">#FFFFFF</color>
+    <color name="basic">#776464</color>
+    <color name="basicc">#202F65</color>
+
+
+
+    <color name="basic1">#776464</color>
+    <color name="basic2">#ff7f73</color>
+    <color name="basic3">#efebe5</color>
+    <color name="basic4">#FFAF06</color>
+    <color name="basic5">#CA3232</color>
+
+    <color name="basic6">#FFF0E6</color>
+    <color name="basic7">#C6AC80</color>
+    <color name="basic8">#c6b680</color>
+    <color name="basic9">#F2EFE9</color>
+    <color name="basic10bg">#77776464</color>
+
+
+
+
+
+<!--    #B8d8d8-->
+<!--    #7A9E9F-->
+<!--    #4F6367-->
+<!--    #EEF5DB-->
+<!--    #FE5F55-->
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/noticeboardappbarlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/basic1"
+
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/noticetitlee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="257dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Notice Board"
+            android:textColor="@color/white"
+            android:textSize="25dp">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/showMyNoticeuplods"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:padding="1dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/description"></ImageView>
+    </RelativeLayout>
+
+
+
+</androidx.appcompat.widget.Toolbar>

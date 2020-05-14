@@ -141,7 +141,7 @@ public class FavoritesFragment extends Fragment {
 
                             }
                         }
-                        Toast.makeText(getContext(), "calling the band", Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(getContext(), "calling the band", Toast.LENGTH_SHORT).show();
                         String s = "tel:" + bandPhone;
                         Intent intent = new Intent(Intent.ACTION_DIAL);
                         intent.setData(Uri.parse(s));

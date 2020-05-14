@@ -29,6 +29,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.sql.Time;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class BandNoticeBoard extends AppCompatActivity  {
@@ -36,7 +37,7 @@ public class BandNoticeBoard extends AppCompatActivity  {
     GridLayout _grid1;
     ImageView _imgvStarttime,_imgvEndtime,_ivpreviousbtn,_showMyNoticeuplods;
     EditText _noticetitle,_starttime,_endtime,_venue,_descriptionband;
-    TextView _myDate,_createnoticeforband,_ChooseDatemsg,_tvbandidNoticeBoard,_DateLabel;
+    TextView _myDate,_createnoticeforband,_ChooseDatemsg,_tvbandidNoticeBoard,_DateLabel,_currentdateNotice;
     Button _nextbtn1,_submitnoticebtn;
     TimePickerDialog timePickerDialog;
     Calendar cal;
@@ -56,6 +57,14 @@ public class BandNoticeBoard extends AppCompatActivity  {
         _createnoticeforband = (TextView) findViewById(R.id.createnoticeforband);
         _tvbandidNoticeBoard = (TextView) findViewById(R.id.tvbandidNoticeBoard);
         _DateLabel = (TextView) findViewById(R.id.DateLabel);
+        _currentdateNotice = (TextView) findViewById(R.id.currentdateNotice);
+
+        //current date
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MMM-YYYY");
+        String currentDate = simpleDateFormat.format(calendar.getTime());
+        _currentdateNotice.setText(currentDate);
+
         _grid1 = (GridLayout) findViewById(R.id.grid1);
         _imgvStarttime = (ImageView) findViewById(R.id.imgvStarttime);
         _imgvEndtime = (ImageView) findViewById(R.id.imgvEndtime);
@@ -156,6 +165,7 @@ public class BandNoticeBoard extends AppCompatActivity  {
                 final String End_Time = _endtime.getText().toString();
                 final String Venue = _venue.getText().toString();
                 final String Description = _descriptionband.getText().toString();
+                final String currentDate = _currentdateNotice.getText().toString();
 
 
 
@@ -187,7 +197,7 @@ public class BandNoticeBoard extends AppCompatActivity  {
                     }
                 };
 
-                CreateNoticeBoardRegisterRequest createNoticeBoardRegisterRequest = new CreateNoticeBoardRegisterRequest(Band_Id, Date, Notice_Title, Start_Time, End_Time, Venue, Description, responseListener);
+                CreateNoticeBoardRegisterRequest createNoticeBoardRegisterRequest = new CreateNoticeBoardRegisterRequest(Band_Id, Date, Notice_Title, Start_Time, End_Time, Venue, Description, currentDate, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(BandNoticeBoard.this);
                 queue.add(createNoticeBoardRegisterRequest);
 

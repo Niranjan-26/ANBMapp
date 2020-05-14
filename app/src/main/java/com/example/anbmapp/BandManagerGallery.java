@@ -144,9 +144,31 @@ public class BandManagerGallery extends AppCompatActivity implements  RecyclerVi
         ru.execute(Band_Id, url_upload);
     }
 
-//handling delete button click
+//sharing button handled
     @Override
     public void onDeleteClick(int i) {
+        Bands_uploads_details clickedSharePost = mlistviews.get(i);
+        final String caption = clickedSharePost.getCaption();
+        final String url_upload = clickedSharePost.getUrl_upload();
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        //using ifelse for caption and image
+        if(url_upload.equals("http://.jpg")){
+            intent.putExtra(Intent.EXTRA_TEXT, caption);
+            startActivity(intent.createChooser(intent, "Share via:"));
+        }else{
+            intent.putExtra(Intent.EXTRA_TEXT, url_upload);
+            startActivity(intent.createChooser(intent, "Share via:"));
+        }
+
+
+
+
+
+
+    }
+    //handling delete swipe button
+    public void onSwipeDelete(int i){
         Bands_uploads_details clickedPost = mlistviews.get(i);
 
         final String Band_Id = _bandidformanagergallery.getText().toString();
@@ -154,9 +176,6 @@ public class BandManagerGallery extends AppCompatActivity implements  RecyclerVi
         final String url_upload = clickedPost.getUrl_upload();
 
         register(Band_Id,url_upload);
-
-
-
 
     }
     ItemTouchHelper.SimpleCallback itemTouchHelperCallback = new ItemTouchHelper.SimpleCallback(0,ItemTouchHelper.RIGHT | ItemTouchHelper.LEFT) {
@@ -167,7 +186,7 @@ public class BandManagerGallery extends AppCompatActivity implements  RecyclerVi
 
         @Override
         public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
-            onDeleteClick(viewHolder.getAdapterPosition());
+            onSwipeDelete(viewHolder.getAdapterPosition());
             Toast.makeText(BandManagerGallery.this, "Deleted", Toast.LENGTH_SHORT).show();
             mlistviews.remove(viewHolder.getAdapterPosition());
             adapterGallery.notifyDataSetChanged();

@@ -57,6 +57,7 @@ public class RecyclerViewAdapterBandNoticeBoard extends RecyclerView.Adapter<Rec
         myViewHolder._etbmembers.setText(details.getEnd_Time());
         myViewHolder._vbmembers.setText(details.getVenue());
         myViewHolder._desbmembers.setText(details.getDescription());
+        myViewHolder._postdatebmembers.setText(details.getCurrentDate());
 
 
     }
@@ -67,7 +68,7 @@ public class RecyclerViewAdapterBandNoticeBoard extends RecyclerView.Adapter<Rec
     }
 
     public  class MyViewHolder extends RecyclerView.ViewHolder{
-        private TextView _ntbmembers,_dbmembers,_stbmembers,_etbmembers,_vbmembers,_desbmembers,_seemorebmembers,_a,_b,_c,_d,_e,_seelessbmembers;
+        private TextView _ntbmembers,_dbmembers,_stbmembers,_etbmembers,_vbmembers,_desbmembers,_seemorebmembers,_a,_b,_c,_d,_e,_seelessbmembers,_postdatebmembers;
         private ImageView _ivdelbmembers;
 
         public MyViewHolder(@NonNull View itemView) {
@@ -80,6 +81,7 @@ public class RecyclerViewAdapterBandNoticeBoard extends RecyclerView.Adapter<Rec
             _desbmembers = (TextView)itemView.findViewById(R.id.desbmembers);
             _seelessbmembers = (TextView)itemView.findViewById(R.id.seelessbmembers);
             _seemorebmembers = (TextView)itemView.findViewById(R.id.seemorebmembers);
+            _postdatebmembers = (TextView)itemView.findViewById(R.id.postdatebmembers);
             _a = (TextView)itemView.findViewById(R.id.a);
             _b = (TextView)itemView.findViewById(R.id.b);
             _c = (TextView)itemView.findViewById(R.id.c);

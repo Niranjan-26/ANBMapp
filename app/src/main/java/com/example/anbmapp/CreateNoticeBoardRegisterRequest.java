@@ -11,7 +11,7 @@ public class CreateNoticeBoardRegisterRequest extends StringRequest {
     private Map<String, String> params;
 
 
-    public CreateNoticeBoardRegisterRequest(String Band_Id, String Date, String Notice_Title, String Start_Time, String End_Time, String Venue, String Description, Response.Listener<String> listener) {
+    public CreateNoticeBoardRegisterRequest(String Band_Id, String Date, String Notice_Title, String Start_Time, String End_Time, String Venue, String Description, String currentDate, Response.Listener<String> listener) {
         super(Method.POST, REGISTER_REQUEST_URL, listener, null);
         params = new HashMap<>();
         params.put("Band_Id", Band_Id);
@@ -21,6 +21,7 @@ public class CreateNoticeBoardRegisterRequest extends StringRequest {
         params.put("End_Time", End_Time);
         params.put("Venue", Venue);
         params.put("Description", Description);
+        params.put("currentDate", currentDate);
 
 
     }

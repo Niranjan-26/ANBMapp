@@ -383,6 +383,15 @@
 
             </Button>
 
+
+            <TextView
+                android:id="@+id/currentdateNotice"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
 <!--            <Button-->
 <!--                android:id="@+id/nextbtn2"-->
 <!--                android:layout_gravity="center"-->

@@ -96,7 +96,8 @@ public class BandMembersProfile extends AppCompatActivity implements  RecyclerVi
                                 o.getString("Start_Time"),
                                 o.getString("End_Time"),
                                 o.getString("Venue"),
-                                o.getString("Description")
+                                o.getString("Description"),
+                                o.getString("currentDate")
 
 
 
